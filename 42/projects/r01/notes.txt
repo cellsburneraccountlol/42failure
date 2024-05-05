@@ -1,0 +1,20 @@
+steps =,
+Check Inputs
+get inputs from command line, and input check for inputs 1<=x<=4 , and that is also in specified 
+format of "x y z ..." , there should be 16 inputs , max 1 '4' , and 4 '1's
+
+Init Board
+Initialise the 4x4 board with 0s 
+
+Search1
+Inputs are linked to a cell on the edges of the 4*4 , if the input is 1 , set the value of the cell to 4 
+
+Lookfor4ve
+Look for 4 in the first 8 inputs , if there is a 4 in the first 4 print 1-4 straight down, 
+if there is a 4 in the second set of 4 inputs print upwards (starting from closest cell) 
+
+Lookfor4ho
+If there is 4 in the 3rd set if 4 inputs, print horizontal 1-4 straight , 
+4 in last set of 4 inputs, print 1-4 backwards (starting from closest cell)
+
+Actually Solving 
