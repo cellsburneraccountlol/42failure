@@ -17,7 +17,7 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_check_print(int x[], int n)
+void	checknprint(int x[], int n)
 {
 	int i;
 	int yes;
@@ -55,7 +55,7 @@ void	create_while(int x[], int k, int n)
 		{
 			if (n == 9 && x[0] > '1')
 				break ;
-			ft_check_print(x, n);
+			checknprint(x, n);
 			x[k]++;
 		}
 	}
