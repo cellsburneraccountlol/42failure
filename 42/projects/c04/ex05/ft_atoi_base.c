@@ -56,7 +56,7 @@ int	atoibase(char a, char *base)
 	return (n);
 }
 /*loop through str ,get *str[i] value
-increase num power(shift left), add i 
+increase num power * n (shift left), add i 
 to num */
 int	stratoibase(char *str, char *base)
 {
@@ -70,7 +70,9 @@ int	stratoibase(char *str, char *base)
 	{
 		i = atoibase(*str++, base);
 		if (i == -1)
+		{
 			break ;
+		}
 		num = num * n ;
 		num = num + i;
 	}
@@ -101,3 +103,9 @@ int main()
 {
 	printf("%d", ft_atoi_base("abc", "abc"));
 }
+/*
+a = 0 * 3 + 0 = 0 
+b = 0 * 3 + 1 = 1
+c = 1 * 3 + 2 = 5
+num = 5 
+*/
